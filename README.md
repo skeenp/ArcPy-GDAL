@@ -49,7 +49,7 @@ def setupgdal():
 	os.environ.clear()
 	os.environ.update(_environ)
 	try:
-        import gdal
+		import gdal
 		log_info("GDAL load success [Version: {0}]".format(gdal.VersionInfo('VERSION_NUM')))
 		return True
 	except ImportError:
